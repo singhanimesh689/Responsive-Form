@@ -1,0 +1,96 @@
+@font-face{
+    font-family: 'Roboto-bold';
+    src: url('../../assets/fonts/Roboto-Bold.ttf') format('ttf');
+    /* Add more src declarations for other formats if needed */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Roboto-regular';
+    src: url('../../assets/fonts/Roboto-Regular.ttf') format('ttf');
+    /* Add more src declarations for other formats if needed */
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+.subscribed-box {
+    display: flex;
+    flex-direction: column;
+  align-items: start;
+  height: 45vh;
+  width: 45vh;
+  border-radius: 15px;
+    background: white;
+    padding: 40px ;
+}
+
+.logo-subscribing {
+    
+    height: 70px;
+}
+
+.Dismiss {
+    font-family: "Roboto-bold",sans-serif;
+    width: 100%;
+    height: 60px;
+    align-self: center;
+    background-color: #153448;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    border: 0;
+    border-radius: 15px;
+}
+
+.thanks-heading {
+    font-family: "Roboto-bold",sans-serif;
+    font-size: 60px;
+    margin-bottom: 5px;
+}
+
+.paragraph {
+    font-family: "Roboto-regular";
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.Dismiss:hover {
+    background-color: #FF5580;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+@media only screen and (min-width : 1294px ) and (min-height : 734px){
+    .box{
+         position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media only screen and (max-width : 414px) {
+    .subscribed-box {
+        width: 396px;
+        padding: 0;
+        height: 915px;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        
+    }
+    .logo-subscribing{
+        margin-top: 50px;
+    }
+    .paragraph {
+        margin-bottom: 170px;
+    }
+    .Dismiss{
+        margin-top: 120px;
+    }
+}

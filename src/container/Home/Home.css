@@ -1,0 +1,63 @@
+body {
+    background: #344C64;
+}
+
+
+.box {
+    
+    height: 734px;
+    width: 1294px ;
+    border-radius: 15px;
+    display: flex;
+    overflow: hidden;
+    background: white;
+}
+
+.logo-part {
+    width : 40%;
+    display: flex;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.logo {
+    align-self: center;
+    height: 830px;
+    width: 1200px;
+    position: absolute;
+    left : -370px;
+}
+
+@media only screen and (min-width : 1294px ) and (min-height : 734px){
+    .box{
+         position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media only screen and (max-width : 414px) {
+    body {
+        background-color: white;
+    }
+    .box {
+        flex-direction: column-reverse;
+        width: 396px;
+        height: 915px;
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+    }
+    .box::after{
+        content :url("../../assets/images/illustration-sign-up-mobile.svg");
+        margin:0;
+        padding: 0;
+        width: 396px;
+        text-align: center;
+     }
+    .logo-part {
+        display: none;
+    }
+}
